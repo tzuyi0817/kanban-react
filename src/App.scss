@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+p,
+span {
+  font-size: 16px
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  color: #5e6c84;
+  &:hover {
+    text-decoration: none;
+    color: #5e6c84;
+  }
+}
+
+li {
+  list-style-type: none;
+  &:hover {
+    background-color: rgb(241, 238, 238);
+    cursor: pointer;
+  }
+}
+
+hr {
+  border-top: 1px solid #b3afaf;
+  margin: 10px 0;
+}
+
+// ===================== navbar =====================
+%hover-style {
+  color: white;
+  transition: all 0.5s;
+}
+
+.navbar {
+  background-color: #026aa7;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control {
+  font-size: 16px;
+}
+
+.search-box {
+  margin: 0 2.5px; 
+}
+
+.searchBtn {
+  &:hover {
+    @extend %hover-style;
+    background-color: #82b3cf;
+  }
+}
+
+.navbar-toggler {
+  display: none;
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+}
+
+.navbar-left {
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+}
+
+.navbar-icon {
+  background-color: #82b3cf;
+  color: white;
+  padding: 7.5px 10px;
+  margin: 0 2.5px;
+  font-size: 16px;
+  &:hover {
+    color: white;
+    background-color: #468fb6;
+    transition: all 0.5s;
+  }
+}
+
+.bars-icon {
+  color: #82b3cf;
+  &:hover {
+    @extend %hover-style;
+  }
+}
+
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+  color: #82b3cf;
+  &:hover {
+    @extend %hover-style;
+  }
+}
+
+%menu-style {
+  color: #5e6c84;
+  padding: 10px;
+}
+
+.create-menu {
+  @extend %menu-style;
+  margin: 20px 0 0 -180px;
+  width: 340px;
+}
+
+.info-menu {
+  @extend %menu-style;
+  margin: 20px 0 0 -180px;
+  width: 300px;
+}
+
+.notice-menu {
+  @extend %menu-style;
+  margin: 20px 0 0 -345px;
+  width: 420px;
+}
+
+.profile-menu {
+  @extend %menu-style;
+  width: 300px;
+  margin: 20px 0 0 -265px;
+}
+
+.create-title,
+.info-title,
+.notice-title,
+.profile-title {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.create-content-title {
+  margin-bottom: 5px;
+  padding: 0 10px;
+}
+
+.create-content,
+.info-content {
+  font-size: 13px;
+  margin: 5px;
+}
+
+.create-btn,
+.info-btn {
+  padding: 5px;
+  &:hover {
+    background-color: rgb(241, 238, 238);
+    cursor: pointer;
+  }
+}
+
+.info-content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice-content-box {
+  padding: 10px;
+  text-align: center;
+}
+
+.logout {
+  font-size: 16px;
+  padding: 0;
+  color: #5e6c84;
+  text-align: left;
+  &:hover{
+    color: #5e6c84;
+    background-color: rgb(241, 238, 238);
+  }
+}
